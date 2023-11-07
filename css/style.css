@@ -41,11 +41,15 @@
     font-style: italic;
 }
 
+/* All my styling attempts here were attempts, can you guys mess with this? - Jose*/
+/*
 body {
     background-color: #FB8500;
 }
 
 #main-container {
     background-color: white;
-    margin: 10%
+    margin: 10%;
+    width: 90%;
+    height: 90%;
 }
