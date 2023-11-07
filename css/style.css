@@ -1,3 +1,4 @@
+/*Robot font added - Jose*/
 @font-face {
     font-family: "Roboto";
     src: url(../fonts/Roboto-Regular.ttf);
@@ -19,4 +20,23 @@
     font-family: "Roboto";
     src: url(../fonts/Roboto-Thin.ttf);
     font-weight: thin;
+}
+
+/*Ubuntu font added - Jose*/
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../fonts/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url(../fonts/Ubuntu-Italic.ttf);
+    font-style: italic;
 }
