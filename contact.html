@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/meyers_and_normalize-form_reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="main-container"> <!-- I will use this in the style later - Jose -->
+      <header>
+        <nav id="main-navbar">
+          <div id="navbar-container">
+            <ul>
+              <li><a href="index.html">MxD</a></li>
+              <li><a href="attendance.html">Attendance</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <!-- Add a section for the log in page? - Jose -->
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <br>
+      <h1>Contact Us</h1><br>
+      <p>We're still ramping up for the conference with new speakers, topics, and sponsors.</p><br>
+      <p>If you're interested in attending, speaking, or sponsoring please get in touch by filling out this form.</p><br>
+      <!-- Added br tags so that it is more legible. -->
+      <!-- Create a Contact Us Form -->
+      <!-- Required Attributes: Name (First and last), Phone, Email, Request, CAPTCHA Verification -->
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name"><br>
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name"><br>
+      <label for="phone_number">Phone Number</label>
+      <input type="tel" id="phone_number"><br>
+      <label for="email">Email</label>
+      <input type="email" id="email"><br>
+      <!--Create dropdown for request-->
+      <label for="request">Request</label>
+      <select name="request" id="request">
+        <option value="member">Becoming a Member</option>
+        <option value="info">Request More Information</option>
+        <option value="sponsor">Sponsorship Inquiry</option>
+        <option value="speaker">Speaker Application</option>
+        <option value="question">Conference Questions</option>
+      </select><br>
+      <!-- Include CAPTCHA verification by using JavaScript here -->
+      <!-- Include Submit button -->
+      <!-- Office and Conference Location indicated -->
+      <input type="submit" value="Sign Up Now" title="Sign Up Now">
+    </div>
+  </body>  
