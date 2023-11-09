@@ -41,15 +41,43 @@
     font-style: italic;
 }
 
-/* All my styling attempts here were attempts, can you guys mess with this? - Jose*/
-/*
-body {
-    background-color: #FB8500;
+/*css for navbar mobile friendly*/
+ul {
+    overflow: hidden;
+    background-color: #FFB703;
 }
 
-#main-container {
-    background-color: white;
-    margin: 10%;
-    width: 90%;
-    height: 90%;
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #92520a;
+    text-align: center;
+    padding: 20px 16px;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+/*MxD page css --will change later so it doesnt mess up everyone elses page*/
+h1{
+    font-weight: bold;
+    text-align: center;
+}
+h4{
+    font-weight: bolder;
+    padding-top: 20px;
+
+}
+section{
+    border: 2px solid;
+    background-color: #219EBC;
+    padding-top: 20px;
+}
+section p{
+    color: #023047;
+}
+body{
+    background-color: #8ECAE6
 }
