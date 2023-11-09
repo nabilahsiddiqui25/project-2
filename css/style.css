@@ -104,3 +104,12 @@ section p{
 img {
     height: 100px;
 }
+
+/* Two Media Queries*/
+/*ipad*/
+@media (min-width: 768px){
+  }
+  
+/*Laptop*/
+@media (min-width: 992px){
+  }
