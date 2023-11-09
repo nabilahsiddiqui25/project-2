@@ -40,6 +40,10 @@
     src: url(../fonts/Ubuntu-Italic.ttf);
     font-style: italic;
 }
+/*body color*/
+body{
+    background-color: #8ECAE6;
+}
 
 /*css for navbar mobile friendly*/
 ul {
@@ -64,6 +68,7 @@ li a {
 h1{
     font-weight: bold;
     text-align: center;
+    font-size: 80px;
 }
 h4{
     font-weight: bolder;
@@ -74,10 +79,14 @@ section{
     border: 2px solid;
     background-color: #219EBC;
     padding-top: 20px;
+    margin-bottom: 20px;
+}
+section h1{
+    font-size: 40px;
 }
 section p{
     color: #023047;
 }
-body{
-    background-color: #8ECAE6
+img {
+    height: 100px;
 }
