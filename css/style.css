@@ -44,7 +44,7 @@ body{
 }
 
 #main-container {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -54,7 +54,6 @@ body{
     border-bottom-right-radius: 30px;
 }
 
-/*css for navbar mobile friendly*/
 ul {
     overflow: hidden;
     background-color: #219EBC;
@@ -80,6 +79,13 @@ li a {
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
+}
+
+img {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
 }
 
 /*MxD page css --will change later so it doesnt mess up everyone elses page*/
@@ -114,6 +120,29 @@ p{
     font-weight: 400;
     margin-top: 2px;
 }
-img {
-    height: 100px;
+
+/* Two Media Queries*/
+/*ipad*/
+@media (min-width: 768px){
+    li a:hover{
+        background-color: #023047;
+        color: white;
+    }
+
+    img {
+        margin: 0;
+    }
+}
+  
+/*Laptop*/
+@media (min-width: 992px){
+    /*nav bar*/
+    li a:hover{
+        background-color: #023047;
+        color: white;
+    }
+
+    img {
+        margin: 0;
+    }
 }
