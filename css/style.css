@@ -57,6 +57,9 @@ body{
 ul {
     overflow: hidden;
     background-color: #219EBC;
+    border-radius: 30px;
+    margin-left: none;
+    margin-right: none;
 }
 
 li {
