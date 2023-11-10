@@ -50,7 +50,8 @@ body{
     padding: 20px;
     padding-top: 0;
     background-color: white;
-    border-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 /*css for navbar mobile friendly*/
@@ -62,7 +63,8 @@ ul {
     margin: 0 auto;
     padding: 20px;
     padding-top: 0;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 li {
@@ -71,11 +73,13 @@ li {
 
 li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 20px 16px;
     font-size: 50px;
     text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
 }
 
 /*MxD page css --will change later so it doesnt mess up everyone elses page*/
