@@ -96,11 +96,19 @@ h1{
     color:  rgb(255, 115, 0);
         font-family: 'Ubuntu',sans-serif;
         font-weight: bold;
+    padding-bottom: 10px;
 }
 h2 {
     font-family: 'Ubuntu', sans-serif;
     margin-top: 4px;
 }
+h3{
+    color:  rgb(255, 115, 0);
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
 h4{
     font-weight: bolder;
     padding-top: 20px;
