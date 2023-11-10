@@ -5,6 +5,18 @@ jQuery(function($) {
   $('html').addClass('hasjs');
 });
 
+function thankYou() {
+  var txt;
+  if (confirm("Your response was received!")) {
+    txt = "Thank you for signing up!";
+  }
+  document.getElementById("thankYouMessage").innerHTML = txt;
+
+  setTimeout(function() {
+    document.getElementById("thankYouMessage").style.display='none';
+  }, 60000);
+}
+
 //adding code for captcha generator here
 (function(){
 	const fonts = ["cursive", "sans-serif", "serif", "monospace"];
