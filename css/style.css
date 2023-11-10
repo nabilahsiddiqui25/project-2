@@ -16,7 +16,7 @@
     font-style: italic;
 }
 
-@font-face {
+/*@font-face {
     font-family: "Roboto";
     src: url(../fonts/Roboto-Thin.ttf);
     font-weight: thin;
@@ -102,7 +102,8 @@ section h1{
     font-size: 40px;
 }
 section p{
-    color: #023047;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 img {
     height: 100px;
