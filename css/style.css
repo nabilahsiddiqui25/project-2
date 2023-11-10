@@ -130,6 +130,7 @@ p{
     font-family: 'Ubuntu',sans-serif;
     color: #219EBC;
     display: block;
+    margin-top: 10px;
 }
 
 .captcha {
