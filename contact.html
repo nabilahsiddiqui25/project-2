@@ -1,56 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="nojs">
   <head>
     <meta charset="UTF-8">
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="css/meyers_and_normalize-form_reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Linking JavaScript file here -->
+    <script async src="js/site.js"></script>
   </head>
   <body>
-    <div id="main-container"> <!-- I will use this in the style later - Jose -->
-      <header>
-        <nav id="main-navbar">
-          <div id="navbar-container">
-            <ul>
-              <li><a href="index.html">MxD</a></li>
-              <li><a href="attendance.html">Attendance</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <!-- Add a section for the log in page? - Jose -->
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <br>
-      <h1>Contact Us</h1><br>
-      <p>We're still ramping up for the conference with new speakers, topics, and sponsors.</p><br>
-      <p>If you're interested in attending, speaking, or sponsoring please get in touch by filling out this form.</p><br>
+    <header>
+      <nav id="main-navbar">
+        <div id="navbar-container">
+          <ul>
+            <li><a href="index.html">MxD</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="main-container"> <!-- Main container no longer has nav inside it - Jose -->  
+      <h1>Contact Us</h1>
+      <p>We're still ramping up for the conference with new speakers, topics, and sponsors.</p>
+      <p>If you're interested in attending, speaking, or sponsoring please get in touch by filling out this form.</p>
       <!-- Added br tags so that it is more legible. -->
       <!-- Create a Contact Us Form -->
       <!-- Required Attributes: Name (First and last), Phone, Email, Request, CAPTCHA Verification -->
-      <label for="first_name">First Name</label>
-      <input type="text" id="first_name"><br>
-      <label for="last_name">Last Name</label>
-      <input type="text" id="last_name"><br>
-      <label for="phone_number">Phone Number</label>
-      <input type="tel" id="phone_number"><br>
-      <label for="email">Email</label>
-      <input type="email" id="email"><br>
-      <!--Create dropdown for request-->
-      <label for="request">Request</label>
-      <select name="request" id="request">
-        <option value="member">Becoming a Member</option>
-        <option value="info">Request More Information</option>
-        <option value="sponsor">Sponsorship Inquiry</option>
-        <option value="speaker">Speaker Application</option>
-        <option value="question">Conference Questions</option>
-      </select><br>
-      <!-- Include CAPTCHA verification by using JavaScript here -->
-      <!-- Include Submit button -->
-      <input type="submit" value="Sign Up Now" title="Sign Up Now"><br>
-      <!-- Specify Office and Conference Locations -->
-      <h2>Office:</h2>
-      <p>333 S Wabash Ave, Suite 2700, Chicago, IL 60604</p><br>
-      <h2>Conference Location:</h2>
-      <p>Illinois Institute of Technology / Chicago Kent College of Law / 565 W Adams St, Chicago, IL 60661</p>
+      <!-- Adding form action -->
+      <form action="#null" autocomplete="on" method="get">
+        <input type="hidden" name="source" value="contact">
+        <label for="first_name" id="first_name1">First Name</label>
+        <input type="text" id="first_name">
+        <label for="last_name" id="last_name1">Last Name</label>
+        <input type="text" id="last_name">
+        <label for="phone_number" id="phone_number1">Phone Number</label>
+        <input type="tel" id="phone_number">
+        <label for="email" id="email1">Email</label>
+        <input type="email" id="email">
+        <!--Create dropdown for request-->
+        <label for="request" id="request1">Request</label>
+        <select name="request" id="request">
+          <option value="member">Becoming a Member</option>
+          <option value="info">Request More Information</option>
+          <option value="sponsor">Sponsorship Inquiry</option>
+          <option value="speaker">Speaker Application</option>
+          <option value="question">Conference Questions</option>
+        </select>
+        <!-- Include CAPTCHA verification here -->
+        <div class="captcha">
+          <label for="captcha-input" id="captcha_input">Enter Captcha</label>
+          <div class="preview"></div>
+          <div class="captcha-form">
+            <input type="text" id="captcha-form" placeholder="Enter captcha text">
+            <button class="captcha-refresh">
+              <i class="fa fa-refresh"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Include Submit button -->
+        <input type="submit" value="Sign Up Now" id="sign_up" title="Sign Up Now" onclick="thankYou()">
+        <!-- Specify Office and Conference Locations -->
+        <h4>Office:</h2>
+        <p>333 S Wabash Ave, Suite 2700, Chicago, IL 60604</p>
+        <h4>Conference Location:</h2>
+        <p>Illinois Institute of Technology / Chicago Kent College of Law / 565 W Adams St, Chicago, IL 60661</p>
+      </form>
     </div>
-  </body>  
+  </body>
+</html>
