@@ -49,7 +49,17 @@
           <option value="speaker">Speaker Application</option>
           <option value="question">Conference Questions</option>
         </select><br>
-        <!-- Include CAPTCHA verification by using JavaScript here -->
+        <!-- Include CAPTCHA verification here -->
+        <div class="captcha">
+          <label for="captcha-input" id="captcha_input">Enter Captcha</label>
+          <div class="preview"></div>
+          <div class="captcha-form">
+            <input type="text" id="captcha-form" placeholder="Enter captcha text">
+            <button class="captcha-refresh">
+              <i class="fa fa-refresh"></i>
+            </button>
+          </div>
+        </div>
         <!-- Include Submit button -->
         <input type="submit" value="Sign Up Now" id="sign_up" title="Sign Up Now"><br>
         <!-- Specify Office and Conference Locations -->

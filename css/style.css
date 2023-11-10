@@ -125,7 +125,7 @@ p{
     margin-bottom: 10px;
 }
 
-#first_name1, #last_name1, #phone_number1, #email1, #request1, #sign_up {
+#first_name1, #last_name1, #phone_number1, #email1, #request1, #sign_up, #captcha_input {
     font-weight: bolder;
     font-family: 'Ubuntu',sans-serif;
     color: #219EBC;
