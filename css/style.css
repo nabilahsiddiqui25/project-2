@@ -115,30 +115,19 @@ section p{
 /* Two Media Queries*/
 /*ipad*/
 @media (min-width: 768px){
+    li a:hover{
+        background-color: #023047;
+        color: white;
+    }
 
+    img {
+        margin: 0;
+    }
 }
   
 /*Laptop*/
 @media (min-width: 992px){
     /*nav bar*/
-    ul {
-        overflow: hidden;
-        background-color: rgb(85, 170, 209);
-    }
-
-    li {
-        float: left;
-    }
-
-    li a {
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 20px 16px;
-        font-size: 50px;
-        text-decoration: none;
-    }
-
     li a:hover{
         background-color: #023047;
         color: white;
