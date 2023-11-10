@@ -84,10 +84,13 @@ h1{
     text-align: left;
     font-size: 80px;
     color:  rgb(255, 115, 0);
+        font-family: 'Ubuntu',sans-serif;
+        font-weight: bold;
 }
 h4{
     font-weight: bolder;
     padding-top: 20px;
+    font-family: 'Ubuntu',sans-serif;
 
 }
 section{
