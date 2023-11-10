@@ -79,6 +79,13 @@ li a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*MxD page css --will change later so it doesnt mess up everyone elses page*/
 h1{
     font-weight: bold;
@@ -102,9 +109,6 @@ section h1{
 }
 section p{
     color: #023047;
-}
-img {
-    height: 100px;
 }
 
 /* Two Media Queries*/
@@ -137,5 +141,9 @@ img {
     li a:hover{
         background-color: #023047;
         color: white;
+    }
+
+    img {
+        height: 100px;
     }
 }
