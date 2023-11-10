@@ -84,6 +84,7 @@ img {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 
 /*MxD page css --will change later so it doesnt mess up everyone elses page*/
@@ -144,6 +145,6 @@ section p{
     }
 
     img {
-        height: 100px;
+        margin: 0;
     }
 }
