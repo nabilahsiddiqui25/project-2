@@ -121,6 +121,19 @@ p{
     margin-top: 2px;
 }
 
+#first_name, #last_name, #phone_number, #email, #request, #sign_up {
+    margin-bottom: 10px;
+}
+
+#first_name1, #last_name1, #phone_number1, #email1, #request1, #sign_up {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#sign_up {
+    margin-top: 10px;
+}
+
 /* Two Media Queries*/
 /*ipad*/
 @media (min-width: 768px){
