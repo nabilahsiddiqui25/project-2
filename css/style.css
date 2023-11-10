@@ -126,7 +126,9 @@ p{
 }
 
 #first_name1, #last_name1, #phone_number1, #email1, #request1, #sign_up {
-    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-family: 'Ubuntu',sans-serif;
+    color: #219EBC;
 }
 
 
