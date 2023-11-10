@@ -16,12 +16,6 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: "Roboto";
-    src: url(../fonts/Roboto-Thin.ttf);
-    font-weight: thin;
-}
-
 /*Ubuntu font added - Jose*/
 
 @font-face {
@@ -56,12 +50,13 @@ body{
     padding: 20px;
     padding-top: 0;
     background-color: white;
+    border-radius: 30px;
 }
 
 /*css for navbar mobile friendly*/
 ul {
     overflow: hidden;
-    background-color: rgb(85, 170, 209);
+    background-color: #219EBC;
 }
 
 li {
@@ -83,15 +78,21 @@ h1{
     text-align: left;
     font-size: 80px;
     color:  rgb(255, 115, 0);
+        font-family: 'Ubuntu',sans-serif;
+        font-weight: bold;
+}
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 4px;
 }
 h4{
     font-weight: bolder;
     padding-top: 20px;
-
+    font-family: 'Ubuntu',sans-serif;
+    color: #219EBC;
 }
 section{
-    border: 2px solid;
-    background-color: #219EBC;
+    border: none;
     padding-top: 20px;
     margin-bottom: 20px;
 }
@@ -99,7 +100,9 @@ section h1{
     font-size: 40px;
 }
 section p{
-    color: #023047;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 2px;
 }
 img {
     height: 100px;
