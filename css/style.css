@@ -57,9 +57,12 @@ body{
 ul {
     overflow: hidden;
     background-color: #219EBC;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 0;
     border-radius: 30px;
-    margin-left: none;
-    margin-right: none;
 }
 
 li {
