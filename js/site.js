@@ -17,6 +17,7 @@ function thankYou() {
   }, 60000);
 }
 
+//Reference: https://www.youtube.com/watch?v=3UZoVrc9A3o
 //adding code for captcha generator here
 (function(){
 	const fonts = ["cursive", "sans-serif", "serif", "monospace"];
