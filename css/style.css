@@ -236,7 +236,7 @@ input {
 .refresh_button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  /*transform: translateY(-50%);*/
   background: #219EBC;
   height: 30px;
   width: 30px;
@@ -246,9 +246,9 @@ input {
   right: 190px;
   cursor: pointer;
 }
-.refresh_button:active {
+/*.refresh_button:active {
   transform: translateY(-50%) scale(0.98);
-}
+}*/
 
 /*this is where i can adjust the dimensions of the button*/
 .input_field input,
@@ -287,16 +287,12 @@ input {
   cursor: pointer;
   user-select: none;
 }
-.button button:active {
+/*.button button:active {
   transform: scale(0.99);
-}
+}*/
 .button.disabled {
   opacity: 0.6;
   pointer-events: none;
-}
-
-.fa-rotate-by {
-    transform: rotate(var(--fa-rotate-angle, 0deg));
 }
 
 /* Two Media Queries*/
