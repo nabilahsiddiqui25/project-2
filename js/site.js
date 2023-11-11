@@ -17,39 +17,65 @@ function thankYou() {
   }, 60000);
 }
 
-//Reference: https://www.youtube.com/watch?v=3UZoVrc9A3o
-//adding code for captcha generator here
-(function(){
-	const fonts = ["cursive", "sans-serif", "serif", "monospace"];
-	//Initializing captchaValue here
-	let captchaValue = "";
-	//Generates captchaValues
-	function generateCaptcha() {
-		let value = btoa(Math.random()*1000000000);
-		value = value.substr(0,5+Math.random()*5);
-		captchaValue = value;
-	}
-	function setCaptcha() {
-		let html = captchaValue.split("").map((char)=>{
-			const rotate = -20 + Math.trunc(Math.random()*30);
-			const font = Math.trunc(Math.random()*fonts.length);
-			return `<span
-				style="
-					transform:rotate(${rotate}deg);
-					font-family:${fonts[font]}
-				"
-			>${char}</span>`
-		}).join("");
-		document.querySelector(".captcha .preview").innerHTML = html;
-	}
+// https://stakedesigner.com/how-to-make-custom-captcha-generator-in-css-javascript/
+const textBox = document.querySelector(".captch_box input");
+const refreshButton = document.querySelector(".refresh_button");
+const inputBox = document.querySelector(".captch_input input");
+const message = document.querySelector(".message");
+const button1 = document.querySelector(".button");
 
-	function initCaptcha() {
-		document.querySelector(".captcha .preview .captcha-refresh").addEventListener("click", function() {
-			generateCaptcha();
-			setCaptcha();
-	});
-		generateCaptcha();
-		setCaptcha();
-	}
-	initCaptcha();
-})();
+let captchaLetters = null;
+
+//generates captcha generator
+const generateCaptcha = () => {
+  //generates random string
+  const str1 = Math.random().toString(36).substring(2, 7);
+  //array splits the string into individual letters
+  const arr1 = str1.split("");
+  //letter changes every time refresh button is clicked
+  const changeLetters = arr1.map((char) => (Math.random() > 0.5 ? char.toUpperCase() : char));
+  captchaLetters = changeLetters.join("   ");
+  textBox.value = captchaLetters;
+  console.log(captchaLetters);
+};
+
+//refreshes the page every time icon is clicked
+const refreshPage = () => {
+  generateCaptcha();
+  inputBox.value = "";
+  captchaKeyUpValidate();
+};
+
+//validates the captcha key generator
+const captchaKeyUpValidate = () => {
+  //button is disabled at the start
+  button1.classList.toggle("disabled", !inputBox.value);
+  if (!inputBox.value) message.classList.remove("active");
+};
+
+//onClick function
+const onClick = () => {
+  captchaLetters = captchaLetters
+    .split("")
+    .filter((char) => char !== " ")
+    .join("");
+//message when user clicks on submit captcha button
+  message.classList.add("active");
+  //if input is valid, captcha is correct
+  if (inputBox.value === captchaLetters) {
+    message.validation = "Entered captcha is correct";
+    message.style.color = "#826afb";
+  } else {
+    //otherwise, if the input is invalid, captcha is not correct
+    message.validation = "Entered captcha is not correct";
+    message.style.color = "#FF2525";
+  }
+};
+
+//addEventListener functions t
+refreshButton.addEventListener("click", refreshPage);
+inputBox.addEventListener("keyup", captchaKeyUpValidate);
+button1.addEventListener("click", onClick);
+
+//generates captcha
+generateCaptcha();

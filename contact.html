@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/meyers_and_normalize-form_reset.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Linking JavaScript file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script async src="js/site.js"></script>
   </head>
   <body>
@@ -49,18 +51,20 @@
           <option value="question">Conference Questions</option>
         </select>
         <!-- Include CAPTCHA verification here -->
-        <div class="captcha">
-          <label for="captcha-input">Enter the captcha code:</label>
-          <input type="text" id="captcha-input" name="captcha-input">
-          <div class="preview"></div>
-          <div class="captcha-form">
-            <input type="text" id="captcha-form" placeholder="Enter captcha text">
-            <button class="captcha-refresh">
-              <i class="fa fa-refresh"></i>
+        <p id="captcha">Captcha Generator</p>
+        <div class="input_field captch_box">
+            <input type="text" value="" disabled />
+            <button class="refresh_button">
+              <i class="fa-solid fa-rotate-right"></i>
             </button>
           </div>
-        </div>
-        <!-- Include Submit button -->
+          <div class="input_field captch_input">
+            <input type="text" placeholder="Enter captcha" />
+          </div>
+          <div class="message">Entered captcha is correct</div>
+          <div class="input_field button disabled">
+            <input type="submit" value="Submit Capcha" id="sign_up" title="Submit Captcha">
+          </div><!-- Include Submit button -->
         <input type="submit" value="Sign Up Now" id="sign_up" title="Sign Up Now" onclick="thankYou()">
         <!-- Specify Office and Conference Locations -->
         <h4>Office:</h4>
