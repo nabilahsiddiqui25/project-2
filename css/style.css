@@ -142,6 +142,7 @@ p{
 }
 
 /*adjust the sign up button to match with the orange background color*/
+/*
 #sign_up {
     margin-bottom: 10px;
     font-weight: bolder;
@@ -149,7 +150,7 @@ p{
     color: #219EBC;
     display: block;
     margin-top: 10px;
-}
+}*/
 
 #request1 {
     margin-bottom: 5px;
@@ -202,6 +203,17 @@ input {
 
 /*Styling for sign up button*/
 #sign_up {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    background: #219EBC;
+    color: #fff;
+    cursor: pointer;
+}
+
+#submit1 {
     margin-top: 10px;
     padding: 10px;
     border: none;
