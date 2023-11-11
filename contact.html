@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/meyers_and_normalize-form_reset.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Linking JavaScript file here -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script async src="js/site.js"></script>
   </head>
   <body>
@@ -48,23 +49,15 @@
           <option value="speaker">Speaker Application</option>
           <option value="question">Conference Questions</option>
         </select>
-        <!-- Include CAPTCHA verification here -->
-        <div class="captcha">
-          <label for="captcha-input" id="captcha_input">Enter Captcha</label>
-          <div class="preview"></div>
-          <div class="captcha-form">
-            <input type="text" id="captcha-form" placeholder="Enter captcha text">
-            <button class="captcha-refresh">
-              <i class="fa fa-refresh"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Include Submit button -->
+        <input type="checkbox" id="checkbox" onclick="thankYou1()">
+        <p id="message">I verify that the above information is correct.</p>
+        <p id="output">Thank you for filling out this form!</p>
         <input type="submit" value="Sign Up Now" id="sign_up" title="Sign Up Now" onclick="thankYou()">
+        <!-- Add checkbox here -->
         <!-- Specify Office and Conference Locations -->
-        <h4>Office:</h2>
+        <h4>Office:</h4>
         <p>333 S Wabash Ave, Suite 2700, Chicago, IL 60604</p>
-        <h4>Conference Location:</h2>
+        <h4>Conference Location:</h4>
         <p>Illinois Institute of Technology / Chicago Kent College of Law / 565 W Adams St, Chicago, IL 60661</p>
       </form>
     </div>

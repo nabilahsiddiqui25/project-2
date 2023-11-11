@@ -17,39 +17,14 @@ function thankYou() {
   }, 60000);
 }
 
-//Reference: https://www.youtube.com/watch?v=3UZoVrc9A3o
-//adding code for captcha generator here
-(function(){
-	const fonts = ["cursive", "sans-serif", "serif", "monospace"];
-	//Initializing captchaValue here
-	let captchaValue = "";
-	//Generates captchaValues
-	function generateCaptcha() {
-		let value = btoa(Math.random()*1000000000);
-		value = value.substr(0,5+Math.random()*5);
-		captchaValue = value;
-	}
-	function setCaptcha() {
-		let html = captchaValue.split("").map((char)=>{
-			const rotate = -20 + Math.trunc(Math.random()*30);
-			const font = Math.trunc(Math.random()*fonts.length);
-			return `<span
-				style="
-					transform:rotate(${rotate}deg);
-					font-family:${fonts[font]}
-				"
-			>${char}</span>`
-		}).join("");
-		document.querySelector(".captcha .preview").innerHTML = html;
-	}
+//thank you message for checkbox
+function thankYou1() {
+  var checkBox = document.getElementById("checkbox");
+  var output = document.getElementById("output");
 
-	function initCaptcha() {
-		document.querySelector(".captcha .preview .captcha-refresh").addEventListener("click", function() {
-			generateCaptcha();
-			setCaptcha();
-	});
-		generateCaptcha();
-		setCaptcha();
-	}
-	initCaptcha();
-})();
+  if (checkBox.checked == true) {
+    output.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
