@@ -50,22 +50,11 @@
           <option value="speaker">Speaker Application</option>
           <option value="question">Conference Questions</option>
         </select>
-        <!-- Include CAPTCHA verification here -->
-        <p id="captcha">Captcha Generator</p>
-        <div class="input_field captch_box">
-            <input type="text" value="" disabled>
-            <button class="refresh_button">
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
-          </div>
-          <div class="input_field captch_input">
-            <input type="text" placeholder="Enter captcha">
-          </div>
-          <div class="message">Entered captcha is correct</div>
-          <div class="input_field button disabled">
-            <input type="submit" value="Submit Capcha" id="submit1" title="Submit Captcha">
-          </div><!-- Include Submit button -->
+        <input type="checkbox" id="checkbox" onclick="thankYou1()">
+        <p id="message">I verify that the above information is correct.</p>
+        <p id="output">Thank you for filling out this form!</p>
         <input type="submit" value="Sign Up Now" id="sign_up" title="Sign Up Now" onclick="thankYou()">
+        <!-- Add checkbox here -->
         <!-- Specify Office and Conference Locations -->
         <h4>Office:</h4>
         <p>333 S Wabash Ave, Suite 2700, Chicago, IL 60604</p>
