@@ -295,6 +295,10 @@ input {
   pointer-events: none;
 }
 
+.fa-rotate-by {
+    transform: rotate(var(--fa-rotate-angle, 0deg));
+}
+
 /* Two Media Queries*/
 /*ipad*/
 @media (min-width: 768px){
