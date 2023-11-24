@@ -139,6 +139,7 @@ p{
     color: #219EBC;
     display: block;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /*adjust the sign up button to match with the orange background color*/
@@ -156,29 +157,6 @@ p{
     margin-bottom: 5px;
 }
 
-input {
-    width: 50%;
-    padding: 5px;
-    border: 1px solid #888;
-}
-
-#checkbox {
-    /*margin-top: 10px;
-    display: block;
-    margin-bottom: 10px;
-    margin-left: -235px;*/
-    float: left;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-left: -234px;
-}
-
-#message {
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-left: -220px;
-}
-
 #output {
     display: none;
 }
@@ -188,6 +166,25 @@ input {
     display: block;
 }
 
+input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#message {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+/*vertically align input boxes*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
 
 /* Two Media Queries*/
 /*ipad*/

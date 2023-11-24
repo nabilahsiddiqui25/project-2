@@ -49,8 +49,10 @@
           <option value="speaker">Speaker Application</option>
           <option value="question">Conference Questions</option>
         </select>
-        <input type="checkbox" id="checkbox" onclick="thankYou1()">
-        <p id="message">I verify that the above information is correct.</p>
+        <div class = "checkbox-container">
+          <label for="checkbox" id="message">
+          <input type="checkbox" id="checkbox" onclick="thankYou1()"> I verify that the above information is correct. </label>
+        </div>
         <p id="output">Thank you for filling out this form!</p>
         <input type="submit" value="Sign Up Now" id="sign_up" title="Sign Up Now" onclick="thankYou()">
         <!-- Add checkbox here -->
