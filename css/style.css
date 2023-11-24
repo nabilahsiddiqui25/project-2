@@ -94,10 +94,11 @@ h1{
     text-align: left;
     font-size: 80px;
     color:  rgb(255, 115, 0);
-        font-family: 'Ubuntu',sans-serif;
-        font-weight: bold;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: bold;
     padding-bottom: 10px;
 }
+
 h2 {
     font-family: 'Ubuntu', sans-serif;
     margin-top: 4px;
@@ -129,7 +130,10 @@ p{
     margin-top: 2px;
 }
 
+/*adjust sizes for input boxes*/
 #first_name, #last_name, #phone_number, #email{
+    width: 90%;
+    box-sizing: border-box;
     margin-bottom: 10px;
 }
 
@@ -212,7 +216,9 @@ form {
     }
 }
 
-/*Create media query for mobile devices*/
-@media (min-width: 320px) {
-    
+/*Create media query for larger screens*/
+@media (min-width: 600px) {
+    #first_name, #last_name, #phone_number, #email {
+        width: 45%;
+    }
 }
