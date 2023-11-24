@@ -211,3 +211,8 @@ form {
         margin: 0;
     }
 }
+
+/*Create media query for mobile devices*/
+@media (min-width: 320px) {
+    
+}
