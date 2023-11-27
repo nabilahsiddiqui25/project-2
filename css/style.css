@@ -83,10 +83,18 @@ li a {
 
 img {
     display: block;
-    width: 80%;
+    width: 100%;
     margin: auto;
-    padding: 10px;
 }
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+    padding: 5px;
+  }
 
 /*MxD page css --will change later so it doesnt mess up everyone elses page*/
 h1{
