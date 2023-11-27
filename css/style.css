@@ -88,6 +88,18 @@ img {
     padding: 10px;
 }
 
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 /*MxD page css --will change later so it doesnt mess up everyone elses page*/
 h1{
     font-weight: bold;
