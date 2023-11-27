@@ -80,21 +80,12 @@ li a {
     font-family: 'Ubuntu', 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-
+/* mobile first for images*/
 img {
     display: block;
     width: 100%;
     margin: auto;
 }
-
-.row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 50%;
-    padding: 5px;
-  }
 
 /*MxD page css --will change later so it doesnt mess up everyone elses page*/
 h1{
@@ -220,8 +211,19 @@ form {
     }
 
     img {
-        margin: 0;
+        display: block;
+        width: 100%;
+        margin: auto;
     }
+
+    .row {
+        display: flex;
+      }
+      
+    .column {
+        flex: 50%;
+        padding: 5px;
+      }
 }
 
 /*Create media query for larger screens*/
