@@ -137,8 +137,8 @@ section h1{
 p{
     font-family: 'Ubuntu', 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 35px;
-    margin-top: 2px;
+    font-size: 28px;
+    margin-top: 4px;
 }
 
 /*adjust sizes for input boxes*/
@@ -206,6 +206,10 @@ input[type="checkbox"] {
     font-weight: 400;
     margin-top: 10px;
     font-size: 35px;
+}
+
+.about_text p {
+    padding-bottom: 10px;
 }
 
 /*vertically align input boxes*/
