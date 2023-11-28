@@ -230,6 +230,10 @@ form {
     img {
         margin: 0;
     }
+    
+    h2{
+        font-size: 30px;
+    }
 }
 
 /*Create media query for larger screens*/
