@@ -44,7 +44,6 @@ body{
 }
 
 #main-container {
-    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -57,7 +56,6 @@ body{
 ul {
     overflow: hidden;
     background-color: #219EBC;
-    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -264,6 +262,10 @@ form {
     
     #plogin{
         font-size: 30px;
+    }
+
+    li a{
+        font-size: 40px;
     }
     
 }
