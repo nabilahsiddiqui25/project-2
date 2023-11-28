@@ -219,6 +219,29 @@ form {
     align-items: left;
 }
 
+/*adjusting login page*/
+.form-container{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 50px;
+}
+
+#femail {
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+#lpass {
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+#plogin{
+    font-size: 45px;
+}
+
 /* Two Media Queries*/
 /*ipad*/
 @media (min-width: 768px){
