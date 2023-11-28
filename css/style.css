@@ -257,6 +257,15 @@ form {
     h2{
         font-size: 30px;
     }
+
+    .form-container{
+        font-size: 35px;
+    }
+    
+    #plogin{
+        font-size: 30px;
+    }
+    
 }
 
 /*Create media query for larger screens*/
@@ -288,6 +297,14 @@ form {
     
     #sign_up {
         font-size: 20px;
+    }
+
+    .form-container{
+        font-size: 40px;
+    }
+    
+    #plogin{
+        font-size: 30px;
     }
 }
 
