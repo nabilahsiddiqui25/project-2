@@ -53,7 +53,8 @@ body{
     border-bottom-right-radius: 30px;
 }
 
-ul {
+/*Navigation section*/
+header {
     overflow: hidden;
     background-color: #219EBC;
     max-width: 1200px;
@@ -65,7 +66,7 @@ ul {
 }
 
 li {
-    float: left;
+    float: right;
 }
 
 li a {
@@ -78,6 +79,19 @@ li a {
     font-family: 'Ubuntu', 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
+/*Hamburger Menu section*/
+.hamburger {
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
 
 img {
     display: block;
