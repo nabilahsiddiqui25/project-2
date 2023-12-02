@@ -83,7 +83,7 @@ li a {
 /*Hamburger Menu section*/
 .hamburger {
     display: block;
-    width: 35px;
+    width: 40px;
     cursor: pointer;
     appearance: none;
     background: none;
@@ -99,6 +99,18 @@ li a {
     background-color: white;
     margin: 6px 0px;
     transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -6px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
 }
 
 img {
