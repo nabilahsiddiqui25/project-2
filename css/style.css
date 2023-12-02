@@ -84,7 +84,6 @@ li a {
 .hamburger {
     display: block;
     width: 35px;
-    height: 35px;
     cursor: pointer;
     appearance: none;
     background: none;
@@ -92,6 +91,15 @@ li a {
     border: none;
 }
 
+.hamburger .bar, .hamburger::after, .hamburger::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
 
 img {
     display: block;
