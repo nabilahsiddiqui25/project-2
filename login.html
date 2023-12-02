@@ -11,22 +11,25 @@
       <nav id="main-navbar">
         <div id="navbar-container">
           <ul>
-            <li><a href="index.html">MxD</a></li>
-            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="index.html">Agenda</a></li>
+            <li><a href="attendance.html">About</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="login.html">Login</a></li>
           </ul>
         </div>
       </nav>
     </header>
+
     <div id="main-container"> <!-- Main container no longer has nav inside it - Jose -->  
       <h1>Sign in</h1>
-      <p>Stay updated with the conference!</p>
-      <form method="POST" action="#null" autocomplete="on">
-        <input type="email" id="femail" name="femail" placeholder="Email">
-        <input type="text" id="lpass" name="lpass" placeholder="Password">
-        <input type="submit" class="button" value="SIGN IN">
-      </form>
+      <p id="plogin">Stay updated with the conference!</p>
+      <div class="form-container">
+        <form method="POST" action="#null" autocomplete="on">
+          <input type="email" id="femail" name="femail" placeholder="Email">
+          <input type="text" id="lpass" name="lpass" placeholder="Password">
+          <input type="submit" class="button" value="SIGN IN">
+        </form>
+      </div>
     </div>
   </body>
 </html>

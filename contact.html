@@ -9,27 +9,26 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script async src="js/site.js"></script>
   </head>
+
   <body>
     <header>
       <nav id="main-navbar">
         <div id="navbar-container">
           <ul>
-            <li><a href="index.html">MxD</a></li>
-            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="index.html">Agenda</a></li>
+            <li><a href="attendance.html">About</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="login.html">Login</a></li>
           </ul>
         </div>
       </nav>
     </header>
+
     <div id="main-container"> <!-- Main container no longer has nav inside it - Jose -->  
       <h1>Contact Us</h1>
-      <p>We're still ramping up for the conference with new speakers, topics, and sponsors.</p>
-      <p>If you're interested in attending, speaking, or sponsoring please get in touch by filling out this form.</p>
-      <!-- Added br tags so that it is more legible. -->
-      <!-- Create a Contact Us Form -->
-      <!-- Required Attributes: Name (First and last), Phone, Email, Request, CAPTCHA Verification -->
-      <!-- Adding form action -->
+      <!-- Add message to Contact Us page -->
+      <p>Are you a Cyber Security expert, IT professional, or CISO?</p>
+      <p>We would love to get in touch with you! Please fill out this Contact form so we can have you attend, speak, or sponsor for the annual GCSI.</p>
       <form action="#null" autocomplete="on" method="get">
         <input type="hidden" name="source" value="contact">
         <label for="first_name" id="first_name1">First Name</label>
@@ -49,10 +48,12 @@
           <option value="speaker">Speaker Application</option>
           <option value="question">Conference Questions</option>
         </select>
+
         <div class = "checkbox-container">
           <label for="checkbox" id="message">
           <input type="checkbox" id="checkbox" onclick="thankYou1()"> I verify that the above information is correct. </label>
         </div>
+        
         <p id="output">Thank you for filling out this form!</p>
         <input type="submit" value="Sign Up Now" id="sign_up" title="Sign Up Now" onclick="thankYou()">
         <!-- Add checkbox here -->
