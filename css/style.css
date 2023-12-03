@@ -113,6 +113,39 @@ li a {
     opacity: 0;
 }
 
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: #219EBC;
+    padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: #023047;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Ubuntu', 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
 img {
     display: block;
     width: 100%;
