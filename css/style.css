@@ -55,29 +55,34 @@ body{
 
 /*Navigation section*/
 header {
-    overflow: hidden;
-    background-color: #219EBC;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    padding-top: 0;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+overflow: hidden;
+background-color: #219EBC;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+padding-top: 0;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
 }
 
 li {
-    float: right;
+float: right;
 }
 
 li a {
-    display: block;
+display: block;
+color: white;
+text-align: center;
+padding: 20px 16px;
+font-size: 50px;
+text-decoration: none;
+font-family: 'Ubuntu', 'Roboto', Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+#logo h2 {
     color: white;
-    text-align: center;
-    padding: 20px 16px;
-    font-size: 50px;
-    text-decoration: none;
-    font-family: 'Ubuntu', 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    display: center;
 }
 
 /*Hamburger Menu section*/
@@ -120,10 +125,10 @@ li a {
     width: 100%;
     min-height: 100vh;
     display: block;
-    z-index: 98;
     background-color: #219EBC;
-    padding-top: 120px;
+    margin-top: 90px;
     transition: 0.4s;
+    z-index: 98;
 }
 
 .mobile-nav.is-active {
@@ -144,6 +149,21 @@ li a {
     font-family: 'Ubuntu', 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: bold;
     border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #219EBC;
+    }
+
+    #main-container {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    nav ul {
+        display: none;
+    }
 }
 
 img {
@@ -338,10 +358,19 @@ form {
 }
 
 /*Create media query for larger screens*/
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     #first_name, #last_name, #phone_number, #email {
         width: 45%;
     }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
 }
 
 /*Laptop*/
