@@ -73,8 +73,7 @@ li a {
 display: block;
 color: white;
 text-align: center;
-padding: 20px 16px;
-font-size: 50px;
+padding: 30px 16px;
 text-decoration: none;
 font-family: 'Ubuntu', 'Roboto', Arial, Helvetica, sans-serif;
 font-weight: bold;
@@ -173,7 +172,7 @@ font-weight: bold;
     border-radius: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     body {
         background-color: #219EBC;
     }
@@ -374,13 +373,13 @@ form {
     }
 
     li a{
-        font-size: 40px;
+        font-size: 28px;
     }
     
 }
 
 /*Create media query for larger screens*/
-@media (min-width: 768px) {
+@media (min-width: 820px) {
     #first_name, #last_name, #phone_number, #email {
         width: 45%;
     }
