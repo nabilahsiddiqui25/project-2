@@ -80,9 +80,28 @@ font-family: 'Ubuntu', 'Roboto', Arial, Helvetica, sans-serif;
 font-weight: bold;
 }
 
+/*Logo sizing*/
+#logo {
+    background-color: white;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+
 #logo h2 {
-    color: white;
+    color: rgb(255, 115, 0);
     display: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+#logo p {
+    font-size: 12px;
+    text-align: center;
 }
 
 /*Hamburger Menu section*/
@@ -94,6 +113,9 @@ font-weight: bold;
     background: none;
     outline: none;
     border: none;
+    float: right;
+    margin-top: 30px;
+
 }
 
 .hamburger .bar, .hamburger::after, .hamburger::before {
@@ -126,7 +148,7 @@ font-weight: bold;
     min-height: 100vh;
     display: block;
     background-color: #219EBC;
-    margin-top: 90px;
+    margin-top: 142px;
     transition: 0.4s;
     z-index: 98;
 }
