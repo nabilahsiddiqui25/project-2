@@ -395,6 +395,21 @@ form {
 
 /*Laptop*/
 @media (min-width: 992px){
+    h1{
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4{
+        font-size: 25px;
+    }
+    p{
+        font-size: 25px;
+    }
     /*nav bar*/
     li a:hover{
         background-color: #023047;
@@ -407,6 +422,7 @@ form {
 
     #first_name, #last_name, #phone_number, #email{
         font-size: 20px;
+        height: 35px;
     }
     
     #first_name1, #last_name1, #phone_number1, #email1, #request1 {
@@ -423,6 +439,23 @@ form {
     
     #plogin{
         font-size: 30px;
+    }
+
+    #request {
+        height:35px;
+        font-size: 20px;
+    }
+
+    #message{
+        font-size: 20px;
+    }
+    
+    .form-container{
+        font-size: 25px;
+    }
+
+    #plogin{
+        font-size: 25px;
     }
 }
 
