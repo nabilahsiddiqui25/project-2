@@ -5,21 +5,36 @@
     <title>log-in</title>
     <link rel="stylesheet" type="text/css" href="css/meyers_and_normalize-form_reset.css">
     <link rel="stylesheet" href="css/style.css">
+        <!-- Linking JavaScript file here -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script async src="js/site.js"></script>
   </head>
   <body>
     <header>
-      <nav id="main-navbar">
-        <div id="navbar-container">
-          <ul>
-            <li><a href="index.html">Agenda</a></li>
-            <li><a href="attendance.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="login.html">Login</a></li>
-          </ul>
+      <a href="about.html">
+        <div id="logo">
+          <h2>GCSI</h2>
+          <p>Surviving Threats - Building Resiliance</p>
         </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Agenda</a></li>
+        </ul>
       </nav>
+      <button class="hamburger">
+        <span class="bar"></span>
+      </button>
     </header>
-
+    <nav class="mobile-nav">
+      <a href="index.html">Agenda</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">Login</a>
+    </nav>
     <div id="main-container"> <!-- Main container no longer has nav inside it - Jose -->  
       <h1>Sign in</h1>
       <p id="plogin">Stay updated with the conference!</p>

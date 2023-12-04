@@ -5,23 +5,36 @@
     <title>MxD</title>
     <link rel="stylesheet" type="text/css" href="css/meyers_and_normalize-form_reset.css">
     <link rel="stylesheet" href="css/style.css">
+        <!-- Linking JavaScript file here -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script async src="js/site.js"></script>
   </head>
-
   <body>
     <header>
-      <nav id="main-navbar">
-        <div id="navbar-container">
-          <ul>
-            <li><a href="index.html">Agenda</a></li>
-            <li><a href="attendance.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="login.html">Login</a></li>
-            <!-- Add a section for the log in page? - Jose -->
-          </ul>
+      <a href="about.html">
+        <div id="logo">
+          <h2>GCSI</h2>
+          <p>Surviving Threats - Building Resiliance</p>
         </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Agenda</a></li>
+        </ul>
       </nav>
+      <button class="hamburger">
+        <span class="bar"></span>
+      </button>
     </header>
-
+    <nav class="mobile-nav">
+      <a href="index.html">Agenda</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">Login</a>
+    </nav>
     <div id="main-container"> <!-- Main container no longer has nav inside it - Jose -->  
       <h1>Agenda</h1>
       <h2>GCSI @ MXD 2023</h2>
@@ -74,13 +87,13 @@
       </section>
 
       <section id = "images">
-        <h1>Conference Sponsors</h1>
+        <h3>Conference Sponsors</h3>
         <div class="row">
           <div class="column">
             <img src="images/iit.png" alt="IIT logo"> 
           </div>
           <div class="column">
-            <img src="images/mxd.png" alt="MxD logo">
+            <img src="images/mxdlogo.png" alt="MxD logo">
           </div>
           <div class="column">
             <img src="images/paabc_logo.webp" alt="PAABC logo">
@@ -89,16 +102,16 @@
             <img src="images/mhub.png" alt="MHUB logo">
           </div>
           <div class="column">
-            <img src="images/aon.png" alt="AON logo">
+            <img src="images/aonlogo.png" alt="AON logo">
           </div>
           <div class="column">
-            <img src="images/ieee_logo.svg.png" alt="IEEE logo">
+            <img src="images/IEEE_logo.png" alt="IEEE logo">
           </div>
           <div class="column">
             <img src="images/1990-blue.png" alt="City of Chicago logo">
           </div>
           <div class="column">
-            <img src="images/seal_of_cook_county,_illinois.svg.png" alt="Seal of CookCounty logo">
+            <img src="images/Seal_of_Cook_County,_Illinois.png" alt="Seal of CookCounty logo">
           </div>
           <div class="column">
             <img src="images/o3algfmkhfgqe9wk7elc.webp" alt="DoIT logo">
